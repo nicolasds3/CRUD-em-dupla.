@@ -32,7 +32,7 @@ $vueData = vue_data_function($conn);
                 <th> Disciplina </th>
                 <th> Horario </th>
                 <th> Sala </th>
-                <th></th>
+                <th> Ações </th>
             </tr>
             <tr v-if="vue_data.length > 0" v-for="item in vue_data">
                 <td>{{ item.nome }}</td>
@@ -40,7 +40,8 @@ $vueData = vue_data_function($conn);
                 <td>{{ item.horario }}</td>
                 <td>{{ item.sala }}</td>
                 <td>
-                    <button type='submit' class="button button1">Enviar</button>
+                    <button type='submit' class="button button1">Editar</button>
+                    <a class='button button1' href="delete.php?id={$row['id']}">Excluir</a>
                 </td>
             </tr>
             <tr v-else>
@@ -63,3 +64,5 @@ $vueData = vue_data_function($conn);
     </script>
 </body>
 </html>
+<br>
+<a href="create.php">Inserir novo registro.</a>

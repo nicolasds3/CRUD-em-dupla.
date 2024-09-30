@@ -36,27 +36,24 @@ include 'db.php';
     <link rel="stylesheet" href="../visual/styles.css">
 </head>
 <body>
-    <h1>Adicionar Diária</h1>
-    <form method="POST" action="create.php">
-        <label for="nome">Nome do Professor: </label>
-        <input type="text" name="nome" required>
-        <br>
-
-        <label for="sala">Número da sala: </label>
-        <input type="number" name="sala" required>
-        <br>
-
-        <label for="tipo_materia">Matéria lecionada: </label>
-        <input type="text" name="tipo_materia" required>
-        <br>
-
-        <label for="horario">Horário da aula: </label>
-        <input type="time" name="horario" required>
-        <br>
-
-        <button type="submit">Adicionar</button>
-
-    </form>
+    <div>
+        <h1>Adicionar Diária</h1>
+        <form method="POST" action="create.php">
+            <label for="nome">Nome do Professor: </label>
+            <input type="text" name="nome" required>
+            <br>
+            <label for="sala">Número da sala: </label>
+            <input type="number" name="sala" required>
+            <br>
+            <label for="tipo_materia">Matéria lecionada: </label>
+            <input type="text" name="tipo_materia" required>
+            <br>
+            <label for="horario">Horário da aula: </label>
+            <input type="time" name="horario" required>
+            <br>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
 </body>
 </html>
 <br>
