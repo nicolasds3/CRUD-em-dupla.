@@ -4,9 +4,7 @@ use crud_dupla;
 
 create table professores (
     id int primary key auto_increment not null,
-    nome varchar(25) not null,
-    disciplina varchar(45) not null,
-    metodo_aula varchar(45) not null
+    nome varchar(25) not null
 );
 
 create table aulas (
